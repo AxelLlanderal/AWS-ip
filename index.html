@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API World Database</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin-top: 60px;
+        }
+
+        table {
+            width: 100%;
+            table-layout: auto;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Base de datos World</a>
+            <button id="countryBtn" class="btn btn-outline-success">Países</button>
+            <button id="cityBtn" class="btn btn-outline-info">Ciudades</button>
+            <button id="countryLanguageBtn" class="btn btn-outline-primary">Idiomas</button>
+            <button id="searchCountryBtn" class="btn btn-outline-warning">Buscar País</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <table class="table table-bordered table-striped">
+            <tbody id="records">
+                <!-- Aquí se insertan dinámicamente los registros de la tabla -->
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Cargar Axios y luego el archivo main.js -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
